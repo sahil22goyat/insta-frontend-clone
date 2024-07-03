@@ -68,8 +68,8 @@ main {
 
 .post img {
     width: 100%;
+    height: auto; /* Ensure images maintain aspect ratio */
     display: block;
-    border-bottom: 1px solid #dbdbdb;
 }
 
 .post-info {
@@ -92,6 +92,19 @@ main {
 .post-info .description {
     margin-top: 5px;
     font-size: 14px;
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.like-button, .comment-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold;
 }
 
 /* Footer styles */
