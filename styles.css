@@ -1,17 +1,14 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
 }
 
-/* Header styles */
 header {
     background-color: #fff;
     border-bottom: 1px solid #dbdbdb;
@@ -54,28 +51,30 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Main styles */
 main {
     padding: 20px 0;
 }
 
 .post {
+    height: 400px;
     margin-bottom: 20px;
     background-color: #fff;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
+    overflow: hidden;
 }
 
 .post img {
     width: 100%;
-    height: auto; /* Ensure images maintain aspect ratio */
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
 .post-info {
     padding: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .post-info img {
@@ -107,7 +106,6 @@ main {
     font-weight: bold;
 }
 
-/* Footer styles */
 footer {
     background-color: #fff;
     border-top: 1px solid #dbdbdb;
